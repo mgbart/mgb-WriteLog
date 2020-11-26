@@ -8,7 +8,7 @@ Else { mkdir $LogPath | Out-Null }
 $CurrentDateTime = get-date -format yyyy-MM-dd___HH-mm-ss	
 $LogFile = "$LogPath" + "LOG_" + $CurrentDateTime + ".txt"
 
-function Write-Log($Info, $Status)
+function Write-mgbLog($Info, $Status)
 {
     switch($Status)
     {
